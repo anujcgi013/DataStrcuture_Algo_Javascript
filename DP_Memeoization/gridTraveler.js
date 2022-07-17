@@ -10,7 +10,7 @@ const gridTraveler = (m, n, memo = {}) => {
 };
  
 console.log(gridTraveler(2, 3));
-console.log(gridTraveler(4, 5));
-console.log(gridTraveler(10, 8));
-console.log(gridTraveler(18, 18));
-console.log(gridTraveler(28, 28));
+// console.log(gridTraveler(4, 5));
+// console.log(gridTraveler(10, 8));
+// console.log(gridTraveler(18, 18));
+// console.log(gridTraveler(28, 28));

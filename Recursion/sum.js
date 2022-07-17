@@ -17,17 +17,17 @@ if(idx === array.length) return 0;
 return array[idx] + _fastSum(array, idx+1);
 }
 
-const input = new Array(9000).fill(1);
+//const input = new Array(9000).fill(1);
 
 // const slowStart = Date.now();
-// // console.log(slowSum([1, 2, -2, 5]));
+console.log(slowSum([1, 2, -2, 5]));
 // console.log(slowSum(input))
 // const slowEnd = Date.now();
 // console.log(`n^2 finished in ${slowEnd - slowStart}`);
 
 
-const fastStart = Date.now();
-console.log(fastSum([1, 2, -2, 5]));
-//console.log(fastSum(input))
-const fastEnd = Date.now();
-console.log(`n^2 finished in ${fastEnd - fastStart}`);
+// const fastStart = Date.now();
+// console.log(fastSum([1, 2, -2, 5]));
+// //console.log(fastSum(input))
+// const fastEnd = Date.now();
+// console.log(`n^2 finished in ${fastEnd - fastStart}`);

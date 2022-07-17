@@ -20,6 +20,13 @@ const shortesPath = (edges, nodeA, nodeB) => {
 };
 
 const buildGraph = (edges) => {
+
+  // If numbers then this way of building graph will work
+  // const arr = Array.from({length:edges.length-1},()=>[]) 
+	// for(let [src,dest] of edges){
+	// 	arr[src].push(dest)
+	// }
+	// return arr
   graph = [];
   for (let edge of edges) {
     const [a, b] = edge;

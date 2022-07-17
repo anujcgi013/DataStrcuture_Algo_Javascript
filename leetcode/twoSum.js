@@ -1,5 +1,6 @@
 // Brute force
 var twoSum_1 = (nums, target) => {
+  if(nums === null) return null;
   for (let index = 0; index < nums.length; index++) {
     for (
       let nestedIndex = index + 1;

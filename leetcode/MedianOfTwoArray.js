@@ -1,6 +1,6 @@
 var findMedianSortedArrays = function (nums1, nums2) {
   const combinedArray = [...nums1, ...nums2];
-  const nweArray = combinedArray.sort((a, b) => {return (a-b)});
+  const newArray = combinedArray.sort((a, b) => {return (a-b)});
   //const newArray = quickSort(combinedArray);
 
   if (newArray.length % 2 === 0) {
@@ -24,7 +24,7 @@ const quickSort = (arr) => {
     el > pivot ? rightArr.push(el) : leftArr.push(el);
   }
 
-  return [...leftArr, pivot, ...rightArr];
+  return [...quickSort(leftArr), pivot, ...quickSort(rightArr)];
 };
 
 console.log(findMedianSortedArrays([1, 3], [2]));
