@@ -23,5 +23,14 @@ const bestSum = (targetSum, numbers, memo = {}) => {
 };
 
 console.log(bestSum(7, [5, 3, 4, 7]));
+// Output - [ 7 ]
 console.log(bestSum(9, [6, 5, 4, 3, 2, 2, 1]));
+// [ 3, 6 ]
 console.log(bestSum(500, [1, 2, 5, 25]));
+// [
+//   25, 25, 25, 25, 25, 25, 25,
+//   25, 25, 25, 25, 25, 25, 25,
+//   25, 25, 25, 25, 25, 25
+// ]
+
+

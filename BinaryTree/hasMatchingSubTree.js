@@ -6,14 +6,14 @@ class Node {
   }
 }
 
-const hasMatchingSumTree = (tree, target) => {
+const hasMatchingSubTree = (tree, target) => {
   if (tree === null) return false;
   else if (isSameTree(tree, target)) {
     return true;
   } else {
     return (
-      hasMatchingSumTree(tree.left, target) ||
-      hasMatchingSumTree(tree.right, target)
+      hasMatchingSubTree(tree.left, target) ||
+      hasMatchingSubTree(tree.right, target)
     );
   }
 };
@@ -53,4 +53,4 @@ const g = new Node(3);
 g.left =a;
 
 console.log(g);
-console.log(hasMatchingSumTree(a, g));
+console.log(hasMatchingSubTree(a, g));
